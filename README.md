@@ -1,6 +1,5 @@
-Nesse repositório realizei um aplicativo desktop que converter texto para texto MAIÚSCULO em python, utilizando o framework ElectronJs para interface.
+Nesse repositório realizei um aplicativo desktop que converte textos para sua versão MAIÚSCULA em python, utilizando o framework ElectronJs.
 
-Usuario: admin
-Senha: 1234
-
+    Usuário: admin
+    Senha: 1234
 
