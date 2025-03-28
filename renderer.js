@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
 
-      console.log("🧪 Enviando login:", username, password);
+      console.log("enviando login:", username, password);
 
       const options = {
         args: [username, password],
@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       PythonShell.run('auth.py', options)
         .then(results => {
-          console.log("✅ Resposta do Python:", results);
+          console.log("resposta do python:", results);
 
           const resposta = results[0];
           if (resposta === 'ok') {
@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
           }
         })
         .catch(err => {
-          console.error("❌ Erro ao rodar auth.py:", err);
+          console.error("deu erro no auth:", err);
           document.getElementById('error').textContent = 'Erro na autenticação.';
         });
     });
