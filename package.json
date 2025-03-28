@@ -1,0 +1,17 @@
+{
+  "name": "meu-app-electron",
+  "version": "1.0.0",
+  "description": "Meu app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . MeuApp --platform=linux --arch=x64 --overwrite --icon=icone.png"
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-packager": "^17.1.1"
+  },
+  "dependencies": {
+    "python-shell": "^5.0.0"
+  }
+}

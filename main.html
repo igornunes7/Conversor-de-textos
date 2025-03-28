@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #e6f2ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      width: 400px;
+      text-align: center;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Conversor de Texto</h2>
+    <textarea id="texto" placeholder="Digite algo..."></textarea><br>
+    <button id="enviarTexto">Converter para MAIÚSCULAS</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
